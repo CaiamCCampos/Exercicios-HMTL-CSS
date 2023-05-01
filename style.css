@@ -1,0 +1,23 @@
+@charset ;
+
+table{
+    height: max-content;
+    width: 400px;
+    border-collapse: collapse;
+    border: 2px;
+}
+td{
+    border: solid 2px;
+    padding: 8px;
+    width: 100px;
+    height: 100px;
+    
+}
+tr{
+    background-color: aquamarine;
+    text-align: center;
+    vertical-align: top;
+}
+/*----------tabelasG a baixo----------------*/
+
+
