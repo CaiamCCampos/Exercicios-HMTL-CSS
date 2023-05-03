@@ -1,0 +1,28 @@
+@charset ;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+table{
+    border-collapse: collapse;
+    border-radius: 5px ;
+    border: 1px solid black;
+}
+td, th, tr{
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+thead  th, .mediaH, .mediaE{
+    background-color: gray;
+    color: white;
+}
+
+col.area{ /* criando colgroup e utilizando o css para modicar o estilo das colunas */
+    background-color: lightgray;
+}
+col.notas{
+    background-color: aquamarine;
+}
+.table{
+    overflow-x: auto;
+}
