@@ -1,23 +1,36 @@
 @charset ;
 
-table{
-    height: max-content;
-    width: 400px;
-    border-collapse: collapse;
-    border: 2px;
-}
-td{
-    border: solid 2px;
-    padding: 8px;
-    width: 100px;
-    height: 100px;
-    
-}
-tr{
-    background-color: aquamarine;
-    text-align: center;
-    vertical-align: top;
-}
+
 /*----------tabelasG a baixo----------------*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+caption{
+    font-size: small;
+    padding: 10px;
+    background-color: gray;
+    opacity: 0.5;
+    height: max-content;
+    width: 100%;
+}
+.tabelaG{
+    width:500px ;
+    border-collapse: collapse;    
+}
+thead, tfoot{
+    background-color: gray;
+}
+td, th{
+    border: 2PX solid black;
+    color: white;
+}
+tbody .corpo td{
+    color: black;
+}
+ tbody .corpo:nth-child(2n){ /*a cada duas linhas ele adiciona o background-color */
+    background-color: aquamarine;
+}
+
+
 
 
