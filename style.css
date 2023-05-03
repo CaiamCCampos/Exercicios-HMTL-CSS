@@ -8,28 +8,46 @@ body{
 caption{
     font-size: small;
     padding: 10px;
-    background-color: gray;
+    background-color: lightskyblue;
     opacity: 0.5;
     height: max-content;
-    width: 100%;
+    width: 500px;
+    border: 2px black;
+    border-radius: 4px;
 }
 .tabelaG{
     width:500px ;
-    border-collapse: collapse;    
+    border-collapse: collapse;
+    position: relative;   
 }
-thead, tfoot{
-    background-color: gray;
+thead > .cabeca > th { /* efeito de titulo da coluna fixo com position sticky, funciona melhor no google crome por enquanto */
+    background-color: black;
+    position: sticky; 
+    top: 0px;
 }
 td, th{
-    border: 2PX solid black;
+    border: 2px solid black;
     color: white;
 }
 tbody .corpo td{
     color: black;
 }
+tbody .corpo .num{
+    text-align: right;
+}
  tbody .corpo:nth-child(2n){ /*a cada duas linhas ele adiciona o background-color */
     background-color: aquamarine;
 }
+tbody .corpo:nth-child(odd){ /* adiciona o background-color nas td impares*/
+    background-color: lightgray ;
+}
+tbody .corpo:nth-child(even){ /* adiciona o background-color nas td pares*/
+    background-color: ;
+}
+.tabelaG tfoot{
+    background-color: black;
+}
+
 
 
 
