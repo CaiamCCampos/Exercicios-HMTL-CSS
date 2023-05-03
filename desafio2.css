@@ -1,0 +1,11 @@
+@charset ;
+table{
+    border-collapse: collapse;
+    box-shadow: 5px rgba(128, 128, 128, 0.76);
+    width: 300px;
+    height: max-content;
+}
+td{
+    text-align: center;
+    border: 2px solid black ;
+}
