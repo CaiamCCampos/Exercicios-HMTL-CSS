@@ -1,0 +1,57 @@
+
+.menu .topico{
+    text-decoration: none;
+    display: block;
+    width: 96%;
+    padding: 20px 5px;
+    color: black;
+}
+#menuburger{
+    width: 50px;
+    height: 50px;
+}
+ #menuburger:hover{
+    
+    height: 60px;
+    
+    transition:  0.5s;
+}
+.topico:hover{
+    background-color: rgba(10, 10, 15, 0.685);
+    color: aliceblue;
+    transition: 1s;
+}
+body{
+    height: 100%; 
+}
+label{
+    transform: translatey(-15px);
+    left: 0px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+.menu{
+    width: 250px;
+    height: 100vh;
+   background-color: rgba(211, 211, 211, 0.445);
+    position: absolute;
+    left: -250px;
+    top: 0px;  
+}
+.menu ul {
+    position: absolute;
+    list-style: none;
+    padding-inline-start: 0px;
+    width: 100%;
+    top: 35px;
+}
+#check[type="checkbox"]{
+    display: none;
+}
+#check[type="checkbox"]:checked ~.menu{
+    transform: translateX(250px);
+    transition: 2s;
+}
+
