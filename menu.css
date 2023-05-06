@@ -11,18 +11,13 @@
     height: 50px;
 }
  #menuburger:hover{
-    
     height: 60px;
-    
     transition:  0.5s;
 }
 .topico:hover{
     background-color: rgba(10, 10, 15, 0.685);
     color: aliceblue;
     transition: 1s;
-}
-body{
-    height: 100%; 
 }
 label{
     transform: translatey(-15px);
@@ -54,4 +49,9 @@ label{
     transform: translateX(250px);
     transition: 2s;
 }
-
+:target{
+    background-color: aqua;
+}
+.div:not(:target){
+    display: none;
+}
